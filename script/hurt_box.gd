@@ -13,8 +13,6 @@ func take_dmg():
 		#dummy_animation.play("idle")
 	
 
-
-
 func _on_area_entered(area: Area2D) -> void:
 	take_dmg()
 
