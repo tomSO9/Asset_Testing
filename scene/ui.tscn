@@ -38,3 +38,4 @@ size_flags_horizontal = 4
 text = "Paltformer - GamePlay"
 
 [connection signal="pressed" from="Panel/Control/VBoxContainer/TopDown" to="." method="_on_top_down_pressed"]
+[connection signal="pressed" from="Panel/Control/VBoxContainer/Paltformer" to="." method="_on_paltformer_pressed"]
