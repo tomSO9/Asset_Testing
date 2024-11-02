@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://beho4u5jvftx3"]
+[gd_scene load_steps=3 format=3 uid="uid://d1iw6huiapqqp"]
 
-[ext_resource type="PackedScene" uid="uid://crj0i8xka21vf" path="res://scene/paltformer_cha.tscn" id="1_2g66x"]
-[ext_resource type="PackedScene" uid="uid://c7e67eeu2rpsg" path="res://scene/tile_map.tscn" id="2_xn7qv"]
+[ext_resource type="PackedScene" uid="uid://cel3vyft3thro" path="res://scene/paltformer_cha.tscn" id="1_2g66x"]
+[ext_resource type="PackedScene" uid="uid://b5n7kdkycrk1r" path="res://scene/tile_map.tscn" id="2_xn7qv"]
 
 [node name="paltformer_world" type="Node2D"]
 

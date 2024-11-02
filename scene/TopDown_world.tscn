@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn1eb7spu6qlr"]
+
+[ext_resource type="PackedScene" uid="uid://dyj6pw33efsrd" path="res://scene/top_down_character.tscn" id="1_44nri"]
+[ext_resource type="PackedScene" uid="uid://crgkj6pbeoinu" path="res://scene/dummy.tscn" id="1_181wn"]
+
+[node name="World" type="Node2D"]
+
+[node name="Top_down_character" parent="." instance=ExtResource("1_44nri")]
+position = Vector2(208, 312)
+
+[node name="wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall"]
+polygon = PackedVector2Array(0, 0, 64, 0, 1088, 0, 1088, 64, 64, 64, 64, 576, 1088, 576, 1088, 0, 1152, 0, 1152, 640, 0, 640)
+
+[node name="dummy" parent="." instance=ExtResource("1_181wn")]
+position = Vector2(600, 320)
+scale = Vector2(2, 2)
