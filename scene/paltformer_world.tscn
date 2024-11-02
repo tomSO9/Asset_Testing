@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://beho4u5jvftx3"]
+
+[ext_resource type="PackedScene" uid="uid://crj0i8xka21vf" path="res://scene/paltformer_cha.tscn" id="1_2g66x"]
+[ext_resource type="PackedScene" uid="uid://c7e67eeu2rpsg" path="res://scene/tile_map.tscn" id="2_xn7qv"]
+
+[node name="paltformer_world" type="Node2D"]
+
+[node name="wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall"]
+polygon = PackedVector2Array(-64, 0, -64, 640, 1216, 640, 1216, 0, 1152, 0, 1088, 72, 1088, 128, 1088, 576, 64, 576, 64, 64, 1152, 64, 1152, 0, 0, 0)
+
+[node name="paltformer_cha" parent="." instance=ExtResource("1_2g66x")]
+position = Vector2(152, 424)
+
+[node name="TileMap" parent="." instance=ExtResource("2_xn7qv")]
+position = Vector2(96, 456)
+layer_0/tile_data = PackedInt32Array(3, 0, 0, 65539, 0, 1, 131075, 0, 2, 196611, 0, 3, 262147, 0, 4, 327683, 0, 5, 4, 65536, 0, 65540, 65536, 1, 131076, 65536, 2, 196612, 65536, 3, 262148, 65536, 4, 327684, 65536, 5, 5, 131072, 0, 65541, 131072, 1, 131077, 131072, 2, 196613, 131072, 3, 262149, 131072, 4, 327685, 131072, 5, 6, 196608, 0, 65542, 196608, 1, 131078, 196608, 2, 196614, 196608, 3, 262150, 196608, 4, 327686, 196608, 5, 7, 262144, 0, 65543, 262144, 1, 131079, 262144, 2, 196615, 262144, 3, 262151, 262144, 4, 327687, 262144, 5, 8, 327680, 0, 65544, 327680, 1, 131080, 327680, 2, 196616, 327680, 3, 262152, 327680, 4, 327688, 327680, 5, 13, 0, 8, 65549, 0, 9, 14, 65536, 8, 65550, 65536, 9, 15, 131072, 8, 65551, 131072, 9, 16, 196608, 8, 65552, 196608, 9, 17, 262144, 8, 65553, 262144, 9, 18, 327680, 8, 65554, 327680, 9, 327679, 524288, 8, 393215, 524288, 9, 262144, 589824, 8, 327680, 589824, 9)
